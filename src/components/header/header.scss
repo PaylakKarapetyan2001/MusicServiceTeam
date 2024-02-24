@@ -1,0 +1,148 @@
+header {
+  width: 100%;
+  height: 60px;
+  background: $color-primary-two;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  .header-block {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color-text;
+
+    span {
+      margin-left: 12px;
+    }
+  }
+
+  .search-box {
+    width: 325px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px;
+    background: $color-text;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+
+    .search-icone {
+      color: #7a7a7a;
+      width: 15px;
+      height: 15px;
+      margin-top: -3px;
+    }
+
+    input {
+      flex: 1;
+      height: 28px;
+      margin-left: 6px;
+      border: none;
+      outline: none;
+    }
+  }
+  .signin-box {
+    width: 157px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .sign-btn {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $color-bg;
+      transition: $transition;
+    }
+    .sign-up {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $color-text;
+      transition: $transition;
+    }
+    .sign-up:hover {
+      color: $color-primary;
+      transition: $transition;
+    }
+  }
+}
+.navbar-block {
+  width: 20%;
+  height: 200px;
+  position: relative;
+  left: 120px;
+}
+
+@media screen and (max-width:980px) {
+    header .header-block .logo {
+        font-size: 20px;
+        transition: $transition;
+    }
+
+    header .search-box {
+        width: 220px;
+        height: 20px;
+        border-radius: 10px;
+        border: 1px;
+        background: $color-text;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+
+        input {
+            height: 20px;
+        }
+        .search-icone {
+            width: 10px;
+            height: 3px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:740px) {
+    header .header-block .logo {
+        font-size: 15px;
+        transition: $transition;
+    }
+
+    header .search-box {
+        width: 200px;
+        height: 15px;
+        border-radius: 10px;
+        border: 1px;
+        background: $color-text;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+
+        input {
+            height: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:520px) {
+    
+}

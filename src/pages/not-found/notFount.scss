@@ -1,0 +1,13 @@
+.notFount {
+    width: 100%;
+    height: 720px;
+    background: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 200px;
+    }
+}

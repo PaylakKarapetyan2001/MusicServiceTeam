@@ -1,0 +1,82 @@
+.navbar-box {
+  width: 322px;
+  height: 677px;
+  border-radius: 10px;
+  background: $color-primary-two;
+  position: sticky;
+  top: 80px;
+  left: 120px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding-bottom: 0px;
+
+  nav {
+    width: 241px;
+    height: 583px;
+    // background: red;
+
+    ul {
+      width: 146px;
+      height: 242px;
+      // background: yellow;
+      display: flex;
+      flex-direction: column;
+      gap: 61px;
+
+      li {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        a {
+          color: $color-text;
+        }
+        a:hover {
+          color: $color-primary;
+          transition: $transition;
+        }
+        a.active  {
+          color: $color-primary;
+        }
+        span {
+          margin-left: 30px;
+          position: absolute;
+        }
+        .icone {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .nav-line {
+      width: 241px;
+      height: 2px;
+      background: $color-text;
+      position: absolute;
+      top: 347px;
+      right: 1;
+    }
+
+    .playlist-box {
+      width: 216px;
+      height: 265px;
+      margin-top: 88px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      h3 {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}

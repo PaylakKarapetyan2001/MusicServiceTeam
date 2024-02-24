@@ -1,0 +1,166 @@
+main {
+  width: 100%;
+  height: 3325px;
+  padding-top: 40px;
+}
+.album-carusel {
+  width: 100%;
+  height: 732px;
+  position: relative;
+  overflow: hidden;
+  .carusel-block {
+    width: 1136px;
+    height: 732px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    .item {
+      width: 670px;
+      height: 732px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border: 7px solid $color-primary-two;
+      border-radius: 10px;
+      .imige-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        h3 {
+          font-family: Lato;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: 0em;
+        }
+      }
+      .imige-box {
+        width: 670px;
+        height: 634px;
+        border-radius: 10px;
+      }
+      .imige-text-box span:nth-child(1) {
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        color: $color-primary;
+      }
+      .imige-text-box span:nth-child(2) {
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+// // podcasts and New releases section 
+
+.podcasts {
+  width: 100%;
+  height: 366px;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+
+  .podcasts-block {
+    width: 1015px;
+    height: 366px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    border-radius: 10px;
+
+    .produts-title-box {
+      width: 992px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-family: Lato;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color-text;
+      }
+      a {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color-primary;
+        cursor: pointer;
+        transition: $transition;
+      }
+      a:hover {
+        color: $color-text;
+      }
+    }
+    .podc-music-block {
+      width: 100%;
+      height: 301px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        width: 325px;
+        height: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .music-box {
+          width: 100%;
+          height: 220px;
+          border-radius: 10px;
+          overflow: hidden;
+          border: 5px solid $color-primary-two;
+        }
+        .text-box {
+          width: 266px;
+          height: 66px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          h4 {
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0em;
+            color: $color-text;
+          }
+
+          .like-box {
+            width: 80px;
+            height: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+              font-family: Lato;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 23px;
+              letter-spacing: 0em;
+              color: $color-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// podcasts and New releases is duplicated
