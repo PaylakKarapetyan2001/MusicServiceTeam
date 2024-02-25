@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function HomeNewReleases() {
   return (
+    <>
     <section className="podcasts">
     <div className="podcasts-block">
       <div className="produts-title-box">
@@ -35,7 +36,17 @@ function HomeNewReleases() {
         </figure>
       </div>
     </div>
-  </section>  )
+  </section>
+  <section className='mon-liseners'>
+    <div className='mon-liseners-block'>
+      <div className='text-box'>
+          <h1>Nemra</h1>
+          <span>2,526,357monthly listeners</span>
+      </div>
+    </div>
+  </section>
+  </>
+  )
 }
 
 export default HomeNewReleases;

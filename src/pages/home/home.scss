@@ -3,6 +3,8 @@ main {
   height: 3325px;
   padding-top: 40px;
 }
+
+// Home album carousel block
 .album-carusel {
   width: 100%;
   height: 732px;
@@ -59,7 +61,7 @@ main {
   }
 }
 
-// // podcasts and New releases section 
+// podcasts and New releases is duplicated
 
 .podcasts {
   width: 100%;
@@ -67,7 +69,6 @@ main {
   margin-top: 52px;
   position: relative;
   overflow: hidden;
-
   .podcasts-block {
     width: 1015px;
     height: 366px;
@@ -75,7 +76,6 @@ main {
     top: 0;
     left: 465px;
     border-radius: 10px;
-
     .produts-title-box {
       width: 992px;
       height: 45px;
@@ -162,5 +162,283 @@ main {
     }
   }
 }
+// Monthly listeners block
 
-// podcasts and New releases is duplicated
+.mon-liseners {
+  width: 100%;
+  height: 366px;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+  .mon-liseners-block {
+    width: 1015px;
+    height: 366px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    border-radius: 10px;
+    border: 5px solid $color-primary-two;
+    display: flex;
+    align-items: center;
+    .text-box {
+      width: 512.98px;
+      height: 138px;
+      position: absolute;
+      margin-left: 39px;
+      h1 {
+        font-family: Lato;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 91px;
+        letter-spacing: 0em;
+        color: $color-text;
+      }
+      span {
+        font-family: Lato;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 51px;
+        letter-spacing: 0em;
+        color: $color-text;
+      }
+    }
+  }
+}
+// Home papular section
+
+.papular {
+  width: 100%;
+  height: 453px;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+  .papular-block {
+    width: 995px;
+    height: 366px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .more {
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0em;
+      color: $color-primary;
+      transition: $transition;
+      cursor: pointer;
+    }
+    h2 {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0em;
+      color: $color-text;
+    }
+    .item {
+      width: 100%;
+      height: 90px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: $transition;
+      .imige-text-box {
+        width: 195px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .imige-block {
+          width: 90px;
+          height: 90px;
+          border-radius: 10px;
+          overflow: hidden;
+          border: 2px solid $color-primary-two;
+        }
+      }
+      .likes-block {
+        width: 398px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      span {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      p {
+        font-family: Lato;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    .item:hover {
+      background: $color-primary-two;
+    }
+
+    .more:hover {
+      color: $color-text;
+    }
+  }
+}
+.player {
+  width: 100%;
+  height: 366px;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+  .player-block {
+    width: 433px;
+    height: 288.02px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    border: 1px solid #21767d;
+    display: flex;
+    align-items: flex-end;
+    .player-box {
+      width: 333px;
+      height: 128.02px;
+      border-radius: 10px;
+      display: flex;
+      gap: 10px;
+      h3 {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: $color-text;
+      }
+      span {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .imige-box {
+        width: 169px;
+        border-radius: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        align-items: flex-end;
+        border: 3px solid #21767d;
+      }
+
+      .text-box {
+        width: 160px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 9px;
+      }
+    }
+  }
+}
+// Album section
+
+.album {
+  width: 100%;
+  height: 405px;
+  margin-top: 52px;
+  position: relative;
+  overflow: hidden;
+  .album-block {
+    width: 1015px;
+    height: 405px;
+    position: absolute;
+    top: 0;
+    left: 465px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .album-music-block {
+      width: 100%;
+      min-height: 318px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        width: 325px;
+        height: 318.04px;
+        border-radius: 10px;
+        background: $color-primary-two;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .item-box {
+          width: 200px;
+          height: 272.47px;
+          border-radius: 10px;
+          .imige-box {
+            width: 100%;
+            height: 193.93px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background: $color-primary-two;
+          }
+          .text-box {
+            width: 120px;
+            height: 64px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            h2 {
+              font-family: Lato;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 28px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+            .dat {
+              width: 100%;
+              height: 3px;
+              display: flex;
+              justify-content: space-between;
+
+              span {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
