@@ -71,7 +71,7 @@ function HomePoularMusicSectin() {
               <span>Best of</span>
             </div>
             <div className="text-box">
-              <h3>Best of  Nemra </h3>
+              <h3>Best of Nemra </h3>
               <span>Playlist</span>
             </div>
           </div>
