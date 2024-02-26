@@ -1,0 +1,114 @@
+.login-block {
+  width: 100%;
+  height: 788px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  .login-box {
+    width: 781px;
+    height: 688px;
+    border-radius: 10px;
+    background: $color-primary-two;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login-form-box {
+      width: 772px;
+      height: 580.27px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      .login-form {
+        width: 387px;
+        height: 516.47px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        label {
+          font-family: Lato;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0em;
+          color: $color-text;
+        }
+        h1 {
+          font-family: Lato;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 43px;
+          letter-spacing: 0em;
+          color: $color-text;
+        }
+        input {
+          width: 387px;
+          height: 60px;
+          border-radius: 6px;
+          border: 1px solid #c7c7c7;
+          background-color: $color-bg;
+          color: #c7c7c7;
+          padding-left: 32px;
+        }
+        a {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19px;
+          letter-spacing: 0em;
+          color: $color-text;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        span {
+            width: 772px;
+            height: 1px;
+            background: #c7c7c7;
+        }
+        .continue {
+          width: 387px;
+          height: 60.36px;
+          border-radius: 6px;
+          border: 1px solid #c7c7c7;
+          background-color: $color-bg;
+          color: #c7c7c7;
+          cursor: pointer;
+          transition: $transition;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 30px;
+          img {
+            margin-left: -300px;
+            position: absolute;
+          }
+        }
+
+        .continue:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .link {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: $color-text;
+  }
+  .link:hover {
+    text-decoration: underline;
+  }
+}
