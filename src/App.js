@@ -5,6 +5,7 @@ import NotFound from './pages/not-found/NotFound';
 import Admin from './pages/admin/Admin';
 import Login from './pages/login/Login';
 import SignUp from './pages/login/SignUp';
+import ForgetPassword from './pages/login/ForgetPassword';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/adm' element ={<Admin />} />
           <Route path='/login' element={<Login />} />
           <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/forget-password' element={<ForgetPassword />} />
           <Route path='*'  element= {<Navigate to = '/not-found'/>}/>
           <Route path='/not-found' element  ={<NotFound />}/>
         </Routes>
