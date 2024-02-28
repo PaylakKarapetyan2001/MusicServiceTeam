@@ -21,6 +21,12 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
       .login-form {
         width: 387px;
         height: 516.47px;
@@ -64,37 +70,10 @@
         a:hover {
           text-decoration: underline;
         }
-        div {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-        span {
-            width: 772px;
-            height: 1px;
-            background: #c7c7c7;
-        }
-        .continue {
-          width: 387px;
-          height: 60.36px;
-          border-radius: 6px;
-          border: 1px solid #c7c7c7;
-          background-color: $color-bg;
-          color: #c7c7c7;
-          cursor: pointer;
-          transition: $transition;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding-left: 30px;
-          img {
-            margin-left: -300px;
-            position: absolute;
-          }
-        }
-
-        .continue:hover {
-          background: transparent;
+        .line {
+          width: 772px;
+          height: 1px;
+          background: #c7c7c7;
         }
       }
     }
@@ -110,5 +89,97 @@
   }
   .link:hover {
     text-decoration: underline;
+  }
+}
+.continue {
+  width: 387px;
+  height: 60.36px;
+  border-radius: 6px;
+  border: 1px solid #c7c7c7;
+  background-color: $color-bg;
+  color: #c7c7c7;
+  cursor: pointer;
+  transition: $transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-left: -300px;
+    position: absolute;
+  }
+}
+
+.continue:hover {
+  background: transparent;
+}
+// sign in page
+
+.signUp-block {
+  width: 100%;
+  height: 931px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  .signUp-box {
+    width: 781px;
+    height: 891px;
+    border-radius: 10px;
+    background: $color-primary-two;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .signUp-form {
+      width: 388px;
+      height: 725px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input {
+        width: 387px;
+        height: 60px;
+        border-radius: 6px;
+        border: 1px solid #c7c7c7;
+        background-color: $color-bg;
+        color: #c7c7c7;
+        padding-left: 32px;
+      }
+      label {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+.password-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  .icone {
+    position: absolute;
+    top: 64px;
+    left: 344px;
+    color: #5b5757;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: $transition;
+  }
+  .icone:hover {
+    color: #b2aeae;
   }
 }

@@ -3,7 +3,18 @@ import "../../assets/css/main.scss";
 import LoginWrapper from "./LoginWrapper";
 import { Link } from "react-router-dom";
 import Google from "../../assets/svg/Frame.svg";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [passwordType, setPasswordType] = useState("password");
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+    setPasswordType(showPassword ? "password" : "text");
+  };
   return (
     <LoginWrapper>
       <div className="container">
@@ -22,15 +33,16 @@ function Login() {
                     required
                   />
                 </div>
-                <div>
+                <div className="password-box">
                   <label htmlFor="password">Password</label>
                   <input
-                    type="password"
+                    type={passwordType}
                     id="password"
                     name="password"
                     placeholder="Password"
                     required
                   />
+                    <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} onClick={togglePasswordVisibility} className="icone"/>
                 </div>
                 <div>
                   <button type="submit" className="login-btn">
@@ -46,11 +58,14 @@ function Login() {
                     Continue with Google
                   </button>
                 </div>
-                <span></span>
+                <span className="line"></span>
               </form>
               <div>
                 <p>
-                  Don't have an account? <Link to="/sign-up" className="link">Sign Up</Link>
+                  Don't have an account?{" "}
+                  <Link to="/sign-up" className="link">
+                    Sign Up
+                  </Link>
                 </p>
               </div>
             </div>
